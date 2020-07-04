@@ -1,0 +1,61 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: rgb(211, 235, 239);
+}
+
+.englishBox {
+  padding-left: 0;
+}
+
+.frenchBox {
+  padding-right: 0;
+}
+
+/* Navbar styling */
+.navStyling {
+  font-family: "Lora", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  background-color: rgb(7, 47, 111);
+}
+
+/* French word card */
+.frenchCard {
+  text-align: center;
+}
+.frenchCard button {
+  font-family: "Lora", sans-serif;
+  margin: 1%;
+}
+
+/* English word card */
+.englishCard {
+  text-align: center;
+}
+.englishCard button {
+  font-family: "Lora", sans-serif;
+  margin: 1%;
+}
+
+/* English answer box */
+.englishBox {
+  font-family: "Lora", sans-serif;
+  text-align: center;
+}
+
+/* French answer box */
+.frenchBox {
+  font-family: "Lora", sans-serif;
+  text-align: center;
+}
+
+/* FOOTER */
+.main-footer {
+  background-color: rgb(7, 47, 111);
+}
