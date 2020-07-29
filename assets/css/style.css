@@ -29,6 +29,7 @@ body {
 .frenchCard {
   text-align: center;
 }
+
 .frenchCard button {
   font-family: "Lora", sans-serif;
   margin: 1%;
@@ -38,6 +39,7 @@ body {
 .englishCard {
   text-align: center;
 }
+
 .englishCard button {
   font-family: "Lora", sans-serif;
   margin: 1%;
@@ -58,4 +60,9 @@ body {
 /* FOOTER */
 .main-footer {
   background-color: rgb(7, 47, 111);
+}
+
+/* Class to remove buttons on successful word match. */
+.removeTest {
+  display: none;
 }
