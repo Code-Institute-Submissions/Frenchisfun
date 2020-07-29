@@ -54,3 +54,25 @@ Todo
 ### Acknowledgements
 
 - I received inspiration for this project from different langauge learning apps. 
+
+
+### Updates 
+
+- 
+Updates 
+
+- 29/07/20
+
+- index.html
+
+- Added id's to French buttons. 
+- Added id's to English buttons. 
+- Added values to English buttons. 
+
+- main.js
+
+- Added functionality to buttons. They now change color when selected. Buttons now disappear when words correctly match. 
+
+- style.css
+
+- Added remove class. 
