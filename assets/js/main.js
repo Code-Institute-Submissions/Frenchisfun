@@ -4,13 +4,14 @@ var words = {
   Guitar: "Guitare",
   Book: "Livre",
 };
+
 $(document).ready(function () {
   // If the user clicks on a english word then an french word run this function
   $(".frbtn").click(function () {
     $(".frbtn").removeClass("btn-secondary").addClass("btn-primary"); // Change button color to show selection
     $(this).removeClass("btn-primary").addClass("btn-secondary"); // Restore to org color if user selects another button
     $("#frenchText").val(this.value); // Display selected word in textarea
-    console.log(words[$("#frenchText").val()]); // temp log
+    // console.log(words[$("#frenchText").val()]); // temp log
     if (words[$("#englishText").val()] === this.value) {
       $(this).addClass("removeTest"); // Add CSS class to remove button on successful match.
       let englishWord = $("#englishText").val();
@@ -29,7 +30,34 @@ $(document).ready(function () {
       let frenchWord = $("#frenchText").val();
       document.getElementById(frenchWord).classList.add("removeTest");
     }
-
-    // if (words[this.value] === $("#frenchText").val()) {
   });
+
+  // Timer
+  var secondsDown = 10; // Increse in for final project.
+  var timeIntervalUp = setInterval(function () {
+    startTimer();
+  }, 1000);
+
+  function startTimer() {
+    document.getElementById("counter").innerHTML =
+      "Time Remaining: " + secondsDown;
+    secondsDown--;
+
+    if (secondsDown == 0) {
+      clearInterval(timeIntervalUp);
+      endTimer();
+      reload();
+    }
+  }
+  function endTimer() {
+    document.getElementById("counter").innerHTML = "Time ran out";
+  }
+
+  function reload() {
+    // Run modal with restricted user options. Only option available is to restart page
+    $("#myModal").modal({
+      backdrop: "static",
+      keyboard: false,
+    });
+  }
 });
