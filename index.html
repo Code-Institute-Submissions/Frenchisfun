@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Francais est super!</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Francais est super!</title>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navStyling">
-      <a class="navbar-brand" href="#">le français est super !</a>
-      <button
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light navStyling">
+		<a class="navbar-brand" href="#">le français est super !</a>
+		<button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -33,28 +27,27 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Name<span class="sr-only">(current)</span></a
-            >
-          </li>
-        </ul>
-        <!-- Countdown Timer -->
-        <div id="counter"></div>
-        <span class="navbar-text">
-          Navbar text with an inline element
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">
+						Name: <p id="name"></p>
+						<span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+			<div id="counter" title="counterTitle"></div> <!-- Countdown Timer -->
+			<span class="navbar-text">
+
         </span>
-      </div>
-    </nav>
-    <div class="container">
-      <!-- French words go here-->
-      <div class="row">
-        <div class="col-sm col-md col-lg">
-          <div class="card">
-            <div class="card-body frenchCard">
-              <button
+		</div>
+	</nav>
+	<div class="container">
+		<!-- French words go here-->
+		<div class="row">
+			<div class="col-sm col-md col-lg">
+				<div class="card">
+					<div class="card-body frenchCard">
+						<button
                 type="button"
                 id="Chien"
                 value="Chien"
@@ -62,7 +55,7 @@
               >
                 Chien
               </button>
-              <button
+						<button
                 type="button"
                 id="Guitare"
                 value="Guitare"
@@ -70,7 +63,7 @@
               >
                 Guitare
               </button>
-              <button
+						<button
                 type="button"
                 id="Livre"
                 value="Livre"
@@ -78,7 +71,7 @@
               >
                 Livre
               </button>
-              <button
+						<button
                 type="button"
                 id="Vélo"
                 value="Vélo"
@@ -86,37 +79,38 @@
               >
                 Vélo
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-      <!-- Boxes -->
-      <div class="row">
-        <div class="col-sm col-md col-lg boxStyle frenchBox">
-          <div class="card">
-            <div class="card-body">
-              <h3>French</h3>
-              <textarea id="frenchText"></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm col-md col-lg boxStyle englishBox">
-          <div class="card">
-            <div class="card-body">
-              <h3>English</h3>
-              <textarea id="englishText"></textarea>
-            </div>
-          </div>
-        </div>
-      </div>
+		<!-- Boxes -->
+		<div class="row">
+			<div class="col-sm col-md col-lg boxStyle frenchBox">
+				<div class="card">
+					<div class="card-body">
+						<h3>French</h3>
+						<textarea id="frenchText"></textarea>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm col-md col-lg boxStyle englishBox">
+				<div class="card">
+					<div class="card-body">
+						<h3>English</h3>
+						<textarea id="englishText"></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
 
-      <!-- English words go here-->
-      <div class="row">
-        <div class="col-sm col-md col-lg">
-          <div class="card">
-            <div class="card-body englishCard">
-              <button
+
+		<!-- English words go here-->
+		<div class="row">
+			<div class="col-sm col-md col-lg">
+				<div class="card">
+					<div class="card-body englishCard">
+						<button
                 type="button"
                 id="Dog"
                 value="Dog"
@@ -124,7 +118,7 @@
               >
                 Dog
               </button>
-              <button
+						<button
                 type="button"
                 id="Guitar"
                 value="Guitar"
@@ -132,7 +126,7 @@
               >
                 Guitar
               </button>
-              <button
+						<button
                 type="button"
                 id="Book"
                 value="Book"
@@ -140,7 +134,7 @@
               >
                 Book
               </button>
-              <button
+						<button
                 type="button"
                 id="Bike"
                 value="Bike"
@@ -148,27 +142,22 @@
               >
                 Bike
               </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- Time up popup-->
-    <!-- Modal to run when counter time runs out. -->
-    <div
-      class="modal fade"
-      id="myModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="timeUpModalPopUp"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="timesUpModal">Times Up!</h5>
-            <!-- 
+	<!-- on load popup-->
+	<!-- Modal to enter user name. -->
+	<div class="modal fade modalStyling" id="enterNameModal" tabindex="-1" role="dialog"
+		aria-labelledby="enterNameModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="enterNameModal">Welcome! Please enter your name!</h5>
+					<input type="text" id="nameInput" placeholder="votre nom S'il vous plaît"></input>
+					<!--
                 <button
               type="button"
               class="close"
@@ -178,56 +167,63 @@
               <span aria-hidden="true">&times;</span>
             </button>
             -->
+				</div>
+				<div class="modal-body modalBodyBgColor">
+					<img src="assets/images/shutterstock_570361936.jpg" id="welcomeImage" alt="Game welcome image">
+					<h5>Match the French words with English words before the counter reaches zero! </h5>
+				</div>
+				<div class="modal-footer">
+					<button type="button" id="enterNameButton">On y va !</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Congratulations up popup-->
+	<!-- Modal to run when counter time runs out. -->
+	<div class="modal fade modalStyling" id="gameCompleteModal" tabindex="-1" role="dialog"
+		aria-labelledby="gameCompleteModalPopUp" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+		<div class="modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="gameCompleteModal">Super !</h5>
+				</div>
+				<div class="modal-body modalBodyBgColor">
+					<img src="assets/images/ToyFaces_Tansparent_BG_56_SM1.png" id='gameCompleteImage' alt="Game complete image">
           </div>
-          <div class="modal-body">
-            <!-- Put an image here?!?-->
-          </div>
-          <div class="modal-footer">
-            <!--
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-            -->
-            <button
+					<div class="modal-footer">
+						<button
               type="button"
               class="btn btn-primary"
               onclick="location.reload()"
             >
-              Try Again
+              Restart
             </button>
-          </div>
-        </div>
-      </div>
-    </div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Footer -->
+		<!-- Footer -->
 
-    <footer class="main-footer">
-      <!-- TO DO -->
-      <p>Footer goes here.</p>
-    </footer>
+		<footer class="main-footer">
+			<!-- TO DO -->
+			<p>Footer goes here.</p>
+		</footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+		</script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
