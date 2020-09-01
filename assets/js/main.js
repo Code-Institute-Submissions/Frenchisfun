@@ -41,6 +41,7 @@ $(document).ready(function () {
       let englishWord = $("#englishText").val();
       document.getElementById(englishWord).classList.add("removeTest");
       console.log(englishWord); // Word appears on a correct match
+      matchAll();
     }
   });
 
@@ -49,53 +50,20 @@ $(document).ready(function () {
     $(".engbtn").removeClass("btn-secondary").addClass("btn-primary");
     $(this).removeClass("btn-primary").addClass("btn-secondary");
     $("#englishText").val(this.value);
-
     if (words[this.value] === $("#frenchText").val()) {
       $(this).addClass("removeTest");
       let frenchWord = $("#frenchText").val();
       document.getElementById(frenchWord).classList.add("removeTest");
+      matchAll();
     }
   });
 
   function matchAll() {
-    //var x = document.querySelectorAll('.removeTest');
-    var myNodeList = document.querySelectorAll(".removeTest");
-
-    console.log(myNodeList);
-    // console.log(myNodeList);
-    // .log(myNodeList.length)
+    var myNodeList = $(".removeTest");
     if (myNodeList.length >= 8) {
-      //  alert('It works');
       $("#gameCompleteModal").modal("show");
     }
   }
-  matchAll();
-
-  /*
-var keyList = Object.keys(words); // create an array that contains the properties of 'words'.
-var french =  $('.frbtn');
-console.log('List all keys in object: ' + keyList);
-
-if (keyList == 4) {
-  console.log('If statement works');
-}
-*/
-
-  /*
-for(i = 0; i < Object.keys(words).length; i++) {
-  console.log('Text: '+ (Object.keys(words)[i]))
-}
-
-*/
-
-  /*
-List keys and values.
-
- Object.keys(words).forEach(function (item) {
-  console.log(item); // key
-  console.log(words[item]); // value
- });
-*/
 
   // Button to retrive information entered in the input. Needs some work!
   $("#enterNameButton").click(function () {

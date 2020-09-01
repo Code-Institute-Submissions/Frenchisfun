@@ -54,17 +54,21 @@ Updates
 
 01/09/20
 
-Added modal that appears on page load to request player name which is then added to the page.
+- Modal now appears when all buttons have been successfully matched.
 
-Added a timer which begins when the player clicks the lets begin button.
+01/09/20
 
-Modal appears when timer gets to zero. Player has the option of restarting the game.
+- Added modal that appears on page load to request player name which is then added to the page.
 
-Added an image to welcome modal and changed background to match image. Added temp text to 'welcome' modal.
+- Added a timer which begins when the player clicks the lets begin button.
 
-Change font site wide.
+- Modal appears when timer gets to zero. Player has the option of restarting the game.
 
-- 17/08/20
+- Added an image to welcome modal and changed background to match image. Added temp text to 'welcome' modal.
+
+- Change font site wide.
+
+17/08/20
 
 - Added countdown functionality. Popup now appears if user has completed a task in the set time.
 
