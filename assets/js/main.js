@@ -9,8 +9,6 @@ var words = {
 function countdown(minutes) {
   let seconds = minutes * 60; // Set time limit here.
   var interval = setInterval(() => {
-    //Reset to let?!?
-    //  console.log(seconds)
     counter.innerHTML =
       parseInt(seconds / 60) +
       ":" +
@@ -18,7 +16,8 @@ function countdown(minutes) {
       (seconds % 60);
     seconds--;
     // Display pop up if timer runs out.
-    if (seconds == 0) {
+    var myNodeList = $(".removeTest"); // This line is repeated later 
+    if ((seconds == 0) || (myNodeList.length >= 8)) {
       clearInterval(interval); // Stop the clock from continuing to run once pop up shows
       $("#gameCompleteModal").modal("show");
     }
@@ -42,6 +41,7 @@ $(document).ready(function () {
       document.getElementById(englishWord).classList.add("removeTest");
       console.log(englishWord); // Word appears on a correct match
       matchAll();
+      
     }
   });
 
@@ -62,6 +62,7 @@ $(document).ready(function () {
     var myNodeList = $(".removeTest");
     if (myNodeList.length >= 8) {
       $("#gameCompleteModal").modal("show");
+ 
     }
   }
 

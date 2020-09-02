@@ -52,6 +52,11 @@ Todo
 
 Updates
 
+
+02/09/20
+
+- Countdown timer now stops on succesful completion of game.
+
 01/09/20
 
 - Modal now appears when all buttons have been successfully matched.
