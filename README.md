@@ -52,6 +52,14 @@ Todo
 
 Updates
 
+03/09/20
+
+- Randomise location of buttons on page load.
+- Added styling to textarea's to prevent user from re-sizing.
+- Incresed word count.
+- Added some styling. 
+- Some code tiding. 
+
 
 02/09/20
 

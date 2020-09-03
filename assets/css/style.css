@@ -6,15 +6,19 @@
 }
 
 body {
-  background-color: rgb(211, 235, 239);
+  background: rgb(16 0 255 / 73%)
+  
 }
 
 .englishBox {
   padding-left: 0;
+ background: rgb(16 0 255 / 73%);
 }
 
 .frenchBox {
   padding-right: 0;
+  background: rgb(16 0 255 / 73%);
+  
 }
 
 /* Navbar styling */
@@ -22,22 +26,34 @@ body {
   font-family: "Comfortaa", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
-  background-color: rgb(7, 47, 111);
-}
+ }
 
 /* French word card */
 .frenchCard {
   text-align: center;
+  background: rgb(16 0 255 / 73%);
 }
 
 .frenchCard button {
   font-family: "Comfortaa", sans-serif;
   margin: 1%;
+  
+}
+
+/* textarea styling */
+
+#englishText {
+  resize: none;
+}
+
+#frenchText {
+  resize: none;
 }
 
 /* English word card */
 .englishCard {
   text-align: center;
+  background: rgb(16 0 255 / 73%)
 }
 
 .englishCard button {
@@ -71,24 +87,26 @@ body {
 #welcomeImage {
   width: 100%;
   height: 100%;
+  pointer-events: none;
 }
 
 /*Image for Game over / Time out */
 #gameCompleteImage {
-  width: 50%;
+  width: 100%;
   height: 50%;
+  pointer-events: none;
 }
 
-/* FOOTER */
-.main-footer {
-  background-color: rgb(7, 47, 111);
-}
-
+/* Rename to removeButton! */
 /* Class to remove buttons on successful word match. */
 .removeTest {
   display: none;
 }
 
-.removeCounter {
-  display: none;
+.footerStyling {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  color:#fff;
 }

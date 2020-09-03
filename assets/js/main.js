@@ -1,83 +1,86 @@
-var words = {
-  Dog: "Chien",
-  Bike: "Vélo",
-  Guitar: "Guitare",
-  Book: "Livre",
-};
+// Randomise buttons
+function randomiseWords() {
+    $(".frenchCard").randomize(".frbtn");
+    $(".englishCard").randomize(".engbtn");
+}
 
-// Count down function
+(function ($) {
+    $.fn.randomize = function (childElem) {
+        return this.each(function () {
+            var $this = $(this);
+            var elems = $this.children(childElem);
+            elems.sort(function () {
+                return Math.round(Math.random()) - 0.8;
+            });
+            $this.remove(childElem);
+            for (var i = 0; i < elems.length; i++) $this.append(elems[i]);
+        });
+    };
+})(jQuery);
+
+// Counter
 function countdown(minutes) {
-  let seconds = minutes * 60; // Set time limit here.
-  var interval = setInterval(() => {
-    counter.innerHTML =
-      parseInt(seconds / 60) +
-      ":" +
-      (seconds % 60 < 10 ? "0" : "") +
-      (seconds % 60);
-    seconds--;
-    // Display pop up if timer runs out.
-    var myNodeList = $(".removeTest"); // This line is repeated later 
-    if ((seconds == 0) || (myNodeList.length >= 8)) {
-      clearInterval(interval); // Stop the clock from continuing to run once pop up shows
-      $("#gameCompleteModal").modal("show");
-    }
-  }, 1000);
-
-  setTimeout(() => clearInterval(interval), minutes * 60 * 1000);
+    let seconds = minutes * 60;
+    var interval = setInterval(() => {
+        counter.innerHTML =
+            parseInt(seconds / 60) +
+            ":" +
+            (seconds % 60 < 10 ? "0" : "") +
+            (seconds % 60);
+        seconds--;
+        var myNodeList = $(".removeTest");
+        if (seconds == 0 || myNodeList.length >= 26) {
+            clearInterval(interval);
+            $("#gameCompleteModal").modal("show");
+        }
+    }, 1000);
 }
 
 $(document).ready(function () {
-  $("#enterNameModal").modal("show"); // Display modal for player to enter name
+    // Show pop up on page load
+    $("#enterNameModal").modal("show");
+    // english word > french word
+    $(".frbtn").click(function () {
+        $(".frbtn").removeClass("btn-secondary").addClass("btn-primary");
+        $(this).removeClass("btn-primary").addClass("btn-secondary");
+        $("#frenchText").val(this.value);
+        if (words[$("#englishText").val()] === this.value) {
+            $(this).addClass("removeTest");
+            let englishWord = $("#englishText").val();
+            $("#" + englishWord).addClass("removeTest");
+            matchAll();
+        }
+    });
 
-  // If the user clicks on a english word then an french word run this function
-  $(".frbtn").click(function () {
-    $(".frbtn").removeClass("btn-secondary").addClass("btn-primary"); // Change button color to show selection
-    $(this).removeClass("btn-primary").addClass("btn-secondary"); // Restore to org color if user selects another button
-    $("#frenchText").val(this.value); // Display selected word in textarea
-    if (words[$("#englishText").val()] === this.value) {
-      // If eng word from 'words' matches then run...
-      $(this).addClass("removeTest"); // Add CSS class to remove button on successful match.
-      let englishWord = $("#englishText").val();
-      document.getElementById(englishWord).classList.add("removeTest");
-      console.log(englishWord); // Word appears on a correct match
-      matchAll();
-      
+    // french word > english word
+    $(".engbtn").click(function () {
+        $(".engbtn").removeClass("btn-secondary").addClass("btn-primary");
+        $(this).removeClass("btn-primary").addClass("btn-secondary");
+        $("#englishText").val(this.value);
+        if (words[this.value] === $("#frenchText").val()) {
+            $(this).addClass("removeTest");
+            let frenchWord = $("#frenchText").val();
+            $("#" + frenchWord).addClass("removeTest");
+            matchAll();
+        }
+    });
+
+    function matchAll() {
+        var myNodeList = $(".removeTest");
+        if (myNodeList.length >= 26) {
+            $("#gameCompleteModal").modal("show");
+        }
     }
-  });
 
-  // If the user clicks on a french word then an english word run this function
-  $(".engbtn").click(function () {
-    $(".engbtn").removeClass("btn-secondary").addClass("btn-primary");
-    $(this).removeClass("btn-primary").addClass("btn-secondary");
-    $("#englishText").val(this.value);
-    if (words[this.value] === $("#frenchText").val()) {
-      $(this).addClass("removeTest");
-      let frenchWord = $("#frenchText").val();
-      document.getElementById(frenchWord).classList.add("removeTest");
-      matchAll();
-    }
-  });
-
-  function matchAll() {
-    var myNodeList = $(".removeTest");
-    if (myNodeList.length >= 8) {
-      $("#gameCompleteModal").modal("show");
- 
-    }
-  }
-
-  // Button to retrive information entered in the input. Needs some work!
-  $("#enterNameButton").click(function () {
-    var str = $("#nameInput").val();
-
-    if (str == "") {
-      // If textfield is blank
-      alert("Please enter a name to begin.");
-    } else {
-      // User enters a name.
-      document.getElementById("name").innerHTML = str;
-      countdown(1); // Start countdown
-      $("#enterNameModal").modal("hide"); // Requires user to enter an name.
-    }
-  });
+    // Enter name on page load.
+    $("#enterNameButton").click(function () {
+        var str = $("#nameInput").val();
+        if (str == "") {
+            alert("Please enter a name to begin.");
+        } else {
+            document.getElementById("name").innerHTML = str;
+            countdown(1);
+            $("#enterNameModal").modal("hide");
+        }
+    });
 });

@@ -1,0 +1,202 @@
+Level 1 :
+
+Chien : Dog
+Fromage : Cheese
+Singe : Monkey
+Livre : Book
+
+Level 2: 
+
+Vélo : Bike
+Bonjour : hello
+Bois : drink
+Chocolat : chocolate
+Poisson : fish
+École : school 
+Guitare : guitar
+Forêt : forest 
+
+
+Level 3 : 
+
+Pomme : apple
+gâteau : cake
+Drôle : funny
+Maison : house
+Montagne - mountain 
+Ballon : ball
+Arbre : tree
+Ciel : sky 
+Pied : foot
+Bouche : mouth
+Lait : milk
+Oeil : eye
+
+Nuit - night 
+Habite - live
+Froide - cold
+Cours - classes
+Institutrice - teacher
+
+
+
+
+
+Un - 1
+Deux - 2
+Trois - 3
+Quatre - 4
+Cinq - 5
+Six - 6
+Sept - 7
+Huit - 8
+Neuf - 9
+Dix - 10
+
+Nourris - fed
+Pomme - apple
+gâteau - cake
+Fromage - cheese
+Mange - eat x 2
+Biscuit - Biscuit
+Restaurant - Restaurant 
+Ferme - close
+Boit - drink
+Chocolat - chocolate
+Poisson - fish
+Bonbon - sweet
+Nourriture - food
+Eau - water 
+
+Chien - dog
+Grenouille - frog
+Oiseau - bird
+Tigre - tiger
+Lion - lion
+Singe - monkey
+Éléphant - elephant
+Papillion - butterfly
+Chat - cat
+Volé - fly
+Homme - man
+Femme - woman
+Garçon - boy 
+Fille - girl
+Soeur - sister
+Enfant - child 
+Mon amie - my friend(f)
+Mon papa - my father 
+Famille - family
+ma mère - my mother
+Mon ami - my friend(m)
+Frère - brother
+
+Amusante (f) - fun
+Drôle - funny 
+Gentille - nice 
+Amusante (m) - fun
+Fâché(m) - angry
+Fâchée(f) - angry
+Doux - soft
+Intelligente (f) - Intelligent 
+Intelligent (m) - Intelligent 
+Maison - house
+Livre - book
+École - school 
+Guitare - guitar
+Montagne - mountain 
+Ballon - ball
+Arbre - tree
+Vélo - bike
+Ciel - sky 
+Campagne -  countryside
+Plage - beach
+Instituteur - teacher
+
+Pied - foot
+Bouche - mouth
+Lait - milk
+Oeil - eye
+
+Nuit - night 
+Habite - live
+Froide - cold
+Cours - classes
+Institutrice - teacher
+J’arrive - I arrive
+Arrive - come
+Dessine x2 - draw
+Dessin - draw
+Parc - park
+Pars - leave
+Chante x2 - sing 
+J’habite - i live 
+Froid - cold 
+Lis - read
+Lit - bed
+Ris - laugh
+Nage x 2 - swim
+Rit - laughs
+Court - he/she/it runs
+Douce - sweet
+Nuage - cloud
+Jour - day 
+
+Dors - sleep
+Mais - but 
+Forêt - forest 
+Mer - sea
+Petite - small (f)
+Petit - small (m)
+Beaucoup - a lot 
+Gentil - nice
+Jouet - toy
+Joue x2 - play
+Dort - sleep
+Plus - more
+Part - go
+Bon - good (m)
+Parc - park
+Fleur - flower
+Bonne - good (f) 
+Chanson - song
+Marche x2- walk 
+Histoire - story 
+Parle - talk 
+Ècrit - write 
+Bonjour - hello
+Peux - can
+Bois - drink
+Bon (m) - good 
+J’ecris - i write
+Nourrit - Nourishes
+
+Sa - his/her its(f)
+Il - he/it
+Je - i 
+I’ - the 
+Est x5 - he/she/it is
+Le - the(m)
+La - the(f)
+Et - and 
+Ma - my(f)
+Au - at/to/of 
+Son - his/her/its (m)
+Fais - do/make
+A - at/to/of
+Sur - on
+Avec - with 
+un - a(m)
+Une - a(f)
+Mon - my(m)
+
+
+
+
+
+
+
+ 
+
+
+

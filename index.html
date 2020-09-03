@@ -5,40 +5,30 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 	<title>Francais est super!</title>
-
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
-<body>
+<body onload="randomiseWords()">
 	<!-- Navigation -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light navStyling">
 		<a class="navbar-brand" href="#">le français est super !</a>
-		<button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarText"
-        aria-controls="navbarText"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
       </button>
 		<div class="collapse navbar-collapse" id="navbarText">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">
-						Name: <p id="name"></p>
+					<a class="nav-link" href="#">Name:
+						<p id="name"></p>
 						<span class="sr-only">(current)</span></a>
 				</li>
 			</ul>
-			<div id="counter" title="counterTitle"></div> <!-- Countdown Timer -->
-			<span class="navbar-text">
-
-        </span>
+			<div id="counter" title="counterTitle"></div>
+			<!-- Countdown Timer -->
 		</div>
 	</nav>
 	<div class="container">
@@ -47,38 +37,19 @@
 			<div class="col-sm col-md col-lg">
 				<div class="card">
 					<div class="card-body frenchCard">
-						<button
-                type="button"
-                id="Chien"
-                value="Chien"
-                class="btn btn-primary frbtn"
-              >
-                Chien
-              </button>
-						<button
-                type="button"
-                id="Guitare"
-                value="Guitare"
-                class="btn btn-primary frbtn"
-              >
-                Guitare
-              </button>
-						<button
-                type="button"
-                id="Livre"
-                value="Livre"
-                class="btn btn-primary frbtn"
-              >
-                Livre
-              </button>
-						<button
-                type="button"
-                id="Vélo"
-                value="Vélo"
-                class="btn btn-primary frbtn"
-              >
-                Vélo
-              </button>
+						<button type="button" id="Chien" value="Chien" class="btn btn-primary frbtn">Chien</button>
+						<button type="button" id="Guitare" value="Guitare" class="btn btn-primary frbtn">Guitare</button>
+						<button type="button" id="Livre" value="Livre" class="btn btn-primary frbtn">Livre</button>
+						<button type="button" id="Vélo" value="Vélo" class="btn btn-primary frbtn">Vélo</button>
+						<button type="button" id="Fromage" value="Fromage" class="btn btn-primary frbtn">Fromage</button>
+						<button type="button" id="Singe" value="Singe" class="btn btn-primary frbtn">Singe</button>
+						<button type="button" id="Poisson" value="Poisson" class="btn btn-primary frbtn">Poisson</button>
+						<button type="button" id="Arbe" value="Arbe" class="btn btn-primary frbtn">Arbe</button>
+						<button type="button" id="Ciel" value="Ciel" class="btn btn-primary frbtn">Ciel</button>
+						<button type="button" id="Papillion" value="Papillion" class="btn btn-primary frbtn">Papillion</button>
+						<button type="button" id="Bonbon" value="Bonbon" class="btn btn-primary frbtn">Bonbon</button>
+						<button type="button" id="Lait" value="Lait" class="btn btn-primary frbtn">Lait</button>
+						<button type="button" id="Forêt" value="Forêt" class="btn btn-primary frbtn">Forêt</button>
 					</div>
 				</div>
 			</div>
@@ -86,17 +57,17 @@
 
 		<!-- Boxes -->
 		<div class="row">
-			<div class="col-sm col-md col-lg boxStyle frenchBox">
+			<div class="col-sm col-md col-lg boxStyle">
 				<div class="card">
-					<div class="card-body">
+					<div class="card-body frenchBox">
 						<h3>French</h3>
 						<textarea id="frenchText"></textarea>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm col-md col-lg boxStyle englishBox">
+			<div class="col-sm col-md col-lg boxStyle ">
 				<div class="card">
-					<div class="card-body">
+					<div class="card-body englishBox">
 						<h3>English</h3>
 						<textarea id="englishText"></textarea>
 					</div>
@@ -104,44 +75,24 @@
 			</div>
 		</div>
 
-
 		<!-- English words go here-->
 		<div class="row">
 			<div class="col-sm col-md col-lg">
 				<div class="card">
 					<div class="card-body englishCard">
-						<button
-                type="button"
-                id="Dog"
-                value="Dog"
-                class="btn btn-primary engbtn"
-              >
-                Dog
-              </button>
-						<button
-                type="button"
-                id="Guitar"
-                value="Guitar"
-                class="btn btn-primary engbtn"
-              >
-                Guitar
-              </button>
-						<button
-                type="button"
-                id="Book"
-                value="Book"
-                class="btn btn-primary engbtn"
-              >
-                Book
-              </button>
-						<button
-                type="button"
-                id="Bike"
-                value="Bike"
-                class="btn btn-primary engbtn"
-              >
-                Bike
-              </button>
+						<button type="button" id="Dog" value="Dog" class="btn btn-primary engbtn">Dog</button>
+						<button type="button" id="Guitar" value="Guitar" class="btn btn-primary engbtn">Guitar</button>
+						<button type="button" id="Book" value="Book" class="btn btn-primary engbtn">Book</button>
+						<button type="button" id="Bike" value="Bike" class="btn btn-primary engbtn">Bike</button>
+						<button type="button" id="Cheese" value="Cheese" class="btn btn-primary engbtn">Cheese</button>
+						<button type="button" id="Monkey" value="Monkey" class="btn btn-primary engbtn">Monkey</button>
+						<button type="button" id="Fish" value="Fish" class="btn btn-primary engbtn">Fish</button>
+						<button type="button" id="Tree" value="Tree" class="btn btn-primary engbtn">Tree</button>
+						<button type="button" id="Sky" value="Sky" class="btn btn-primary engbtn">Sky</button>
+						<button type="button" id="Butterfly" value="Butterfly" class="btn btn-primary engbtn">Butterfly</button>
+						<button type="button" id="Sweet" value="Sweet" class="btn btn-primary engbtn">Sweet</button>
+						<button type="button" id="Milk" value="Milk" class="btn btn-primary engbtn">Milk</button>
+						<button type="button" id="Forest" value="Forest" class="btn btn-primary engbtn">Forest</button>
 					</div>
 				</div>
 			</div>
@@ -155,75 +106,59 @@
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="enterNameModal">Welcome! Please enter your name!</h5>
-					<input type="text" id="nameInput" placeholder="votre nom S'il vous plaît"></input>
-					<!--
-                <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-            -->
-				</div>
-				<div class="modal-body modalBodyBgColor">
-					<img src="assets/images/shutterstock_570361936.jpg" id="welcomeImage" alt="Game welcome image">
-					<h5>Match the French words with English words before the counter reaches zero! </h5>
-				</div>
-				<div class="modal-footer">
-					<button type="button" id="enterNameButton">On y va !</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Congratulations up popup-->
-	<!-- Modal to run when counter time runs out. -->
-	<div class="modal fade modalStyling" id="gameCompleteModal" tabindex="-1" role="dialog"
-		aria-labelledby="gameCompleteModalPopUp" aria-hidden="true" data-keyboard="false" data-backdrop="static">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="gameCompleteModal">Super !</h5>
-				</div>
-				<div class="modal-body modalBodyBgColor">
-					<img src="assets/images/ToyFaces_Tansparent_BG_56_SM1.png" id='gameCompleteImage' alt="Game complete image">
+					<h5 class="modal-title">
+						<!-- id="enterNameModal"    -->
+						Welcome! Please enter your name!
+					</h5>
+					<input type="text" id="nameInput" placeholder="votre nom S'il vous plaît"/>
           </div>
+					<div class="modal-body modalBodyBgColor">
+						<img src="assets/images/shutterstock_570361936.jpg" id="welcomeImage" draggable="false" alt="Game welcome image"/>
+						<h5>Match the French words with English words before the counter reaches zero! </h5>
+					</div>
 					<div class="modal-footer">
-						<button
-              type="button"
-              class="btn btn-primary"
-              onclick="location.reload()"
-            >
-              Restart
-            </button>
+						<button type="button" id="enterNameButton">On y va !</button>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Modal to run when counter time runs out or on game complete. -->
+		<div class="modal fade modalStyling" id="gameCompleteModal" tabindex="-1" role="dialog"
+			aria-label="gameCompleteModalPopUp" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Super !</h5> <!-- id="gameCompleteModal" -->
+					</div>
+					<div class="modal-body modalBodyBgColor">
+						<img src="assets/images/shutterstock_1409674409.jpg" id="gameCompleteImage" draggable="false" alt="Game complete image"/>
+                    </div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" onclick="location.reload()">Restart</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
-		<!-- Footer -->
+			<!-- Footer -->
+			<footer class="main-footer">
+				<!-- TO DO -->
+				<p class="footerStyling">2020 Adrian Looney</p>
+			</footer>
 
-		<footer class="main-footer">
-			<!-- TO DO -->
-			<p>Footer goes here.</p>
-		</footer>
-
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-		</script>
-		<script src="assets/js/main.js"></script>
-
+			<!-- Optional JavaScript -->
+			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+				crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+				crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+				integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+				crossorigin="anonymous"></script>
+			<script src="assets/js/words.js"></script>
+			<script src="assets/js/main.js"></script>
 </body>
 
 </html>
