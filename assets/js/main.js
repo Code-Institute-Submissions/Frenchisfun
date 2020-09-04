@@ -28,14 +28,19 @@ function countdown(minutes) {
             (seconds % 60 < 10 ? "0" : "") +
             (seconds % 60);
         seconds--;
-        var myNodeList = $(".removeTest");
-        if (seconds == 0 || myNodeList.length >= 26) {
+
+
+        var myNodeList = $(".removeButton");
+
+        if (seconds == 0) {
+            clearInterval(interval);
+            $("#countdownPastModal").modal("show");
+        } else if (myNodeList.length >= 26) {
             clearInterval(interval);
             $("#gameCompleteModal").modal("show");
         }
     }, 1000);
 }
-
 $(document).ready(function () {
     // Show pop up on page load
     $("#enterNameModal").modal("show");
@@ -45,9 +50,9 @@ $(document).ready(function () {
         $(this).removeClass("btn-primary").addClass("btn-secondary");
         $("#frenchText").val(this.value);
         if (words[$("#englishText").val()] === this.value) {
-            $(this).addClass("removeTest");
+            $(this).addClass("removeButton fadeOut");
             let englishWord = $("#englishText").val();
-            $("#" + englishWord).addClass("removeTest");
+            $("#" + englishWord).addClass("removeButton fadeOut");
             matchAll();
         }
     });
@@ -58,17 +63,18 @@ $(document).ready(function () {
         $(this).removeClass("btn-primary").addClass("btn-secondary");
         $("#englishText").val(this.value);
         if (words[this.value] === $("#frenchText").val()) {
-            $(this).addClass("removeTest");
+            $(this).addClass("removeButton fadeOut");
             let frenchWord = $("#frenchText").val();
-            $("#" + frenchWord).addClass("removeTest");
+            $("#" + frenchWord).addClass("removeButton fadeOut");
             matchAll();
         }
     });
 
     function matchAll() {
-        var myNodeList = $(".removeTest");
+        var myNodeList = $(".removeButton");
         if (myNodeList.length >= 26) {
             $("#gameCompleteModal").modal("show");
+            clearInterval();
         }
     }
 

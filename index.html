@@ -122,43 +122,65 @@
 				</div>
 			</div>
 		</div>
+
 		<!-- Modal to run when counter time runs out or on game complete. -->
 		<div class="modal fade modalStyling" id="gameCompleteModal" tabindex="-1" role="dialog"
 			aria-label="gameCompleteModalPopUp" aria-hidden="true" data-keyboard="false" data-backdrop="static">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Super !</h5> <!-- id="gameCompleteModal" -->
+						<h5 class="modal-title">Super!</h5> <!-- id="gameCompleteModal" -->
 					</div>
 					<div class="modal-body modalBodyBgColor">
 						<img src="assets/images/shutterstock_1409674409.jpg" id="gameCompleteImage" draggable="false" alt="Game complete image"/>
                     </div>
 						<div class="modal-footer">
+
 							<button type="button" class="btn btn-primary" onclick="location.reload()">Restart</button>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!-- Footer -->
-			<footer class="main-footer">
-				<!-- TO DO -->
-				<p class="footerStyling">2020 Adrian Looney</p>
-			</footer>
 
-			<!-- Optional JavaScript -->
-			<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-				crossorigin="anonymous"></script>
-			<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-				integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-				crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-				integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-				crossorigin="anonymous"></script>
-			<script src="assets/js/words.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Modal to run when counter time runs. -->
+			<div class="modal fade modalStyling" id="countdownPastModal" tabindex="-1" role="dialog"
+				aria-label="countdownPastModalPopUp" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Oh merde! Time is up!</h5> <!--  id="gameCompleteModal" -->
+						</div>
+						<div class="modal-body modalBodyBgColor">
+							<img src="assets/images/shutterstock_1802442298.jpg" id="countdownPastImage" draggable="false" alt="Count down past image"/>
+                    </div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-primary" onclick="location.reload()">Try again</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Footer -->
+				<footer class="main-footer">
+					<!-- TO DO -->
+					<p class="footerStyling">2020 Adrian Looney</p>
+				</footer>
+
+				<!-- Optional JavaScript -->
+				<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+				<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+					integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+					crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+					crossorigin="anonymous"></script>
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+					integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+					crossorigin="anonymous"></script>
+				<script src="assets/js/words.js"></script>
+				<script src="assets/js/main.js"></script>
 </body>
 
 </html>

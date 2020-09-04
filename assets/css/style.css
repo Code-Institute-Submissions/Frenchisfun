@@ -90,19 +90,45 @@ body {
   pointer-events: none;
 }
 
-/*Image for Game over / Time out */
+/*Image for Game complete / Time out */
 #gameCompleteImage {
   width: 100%;
   height: 50%;
   pointer-events: none;
 }
 
-/* Rename to removeButton! */
-/* Class to remove buttons on successful word match. */
-.removeTest {
-  display: none;
+/* Image for time up */
+#countdownPastImage{
+  width: 100%;
+  height: 50%;
+  pointer-events: none;
 }
 
+
+/* Class to fade out button on successful word match. */
+    .removeButton {
+            /*  */
+            -webkit-animation-duration: 10s;animation-duration: 5s;
+            -webkit-animation-fill-mode: both;animation-fill-mode: both;
+        }
+         
+         @-webkit-keyframes fadeOut {
+            0% {opacity: 1;}
+            100% {opacity: 0;}
+         }
+         
+         @keyframes fadeOut {
+            0% {opacity: 1;background-color: #33cc33
+;}
+            100% {opacity: 0; visibility: hidden;}
+         }
+         
+         .fadeOut {
+            -webkit-animation-name: fadeOut;
+            animation-name: fadeOut;
+            overflow:hidden;
+
+         }
 .footerStyling {
     font-family: "Comfortaa", sans-serif;
     font-weight: bold;

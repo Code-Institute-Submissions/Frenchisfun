@@ -1,20 +1,55 @@
+
+
+
+
 # French / English word matching game
 
-Todo
-https://jammerref2015.github.io/Frenchisfun/
+// Include image here! 
+
+'French is fun' is a simple word matching game inspired by a word matching game that uses double sided magnets with the English
+word on one side, the French word on the other. 
+As someone learning the French langauge i wanted to develop a fun word matching game aimed at people that are at the 
+early stages of learning French. The aim is Très facile! Simply match the English word to the corresponding French word! 
+Try to match all the words before the time runs out! 
+
+
 ## UX
 
-Todo
+- The colors for this app were intended to be bright. 
+
+- Wire frames are available in the folder. 
 
 ## Features
 
+- The game features a selection of words in English and French. 
+
 ### Existing Features
 
-- Todo
+- The abilty to add a name. 
 
 ### Possible features that could be included.
 
-- Todo
+- The abilty to change difficulty. Perhaps by making an adjustment to the countdown time. For example an easy difficulty level providing more 
+time in which to complete the game. 
+
+- Turn the counter off. Learn on your time without the pressure of the timer. 
+
+- Multiple levels. Increasing in difficulty as the user progresses by means of including more difficult words. Counter continuing to countdown as they progress. 
+
+- Audio. Hear the word when a user clicks on a button. Also include some kind of sound on a successful match and/or successfully 
+completing a level. 
+
+- Different style of game such as including a series of words alongside an image. The user selects the correct word to match the image. 
+
+- Allow user to create a profile. 
+
+- Enable user to have a word count showing the words that they have learned. 
+
+- Dark mode feature. 
+
+- Allow user to change UI colors from included options. 
+
+
 
 ### Features Left to Implement
 
@@ -25,32 +60,82 @@ Todo
 - [Bootstrap](https://getbootstrap.com/)
   - The project uses a **Bootstrap** framework.
 - [Google fonts](https://fonts.google.com) - The project uses google fonts.
-- [jQuery] Todo
+- [jQuery] (https://jquery.com/)  - Many of the features in this application use jquery. 
 
 ## Testing
 
-- to do
+- The application was tested manually. This involved the following steps. 
+
+
+Tested on multilpe browsers! 
+
+Tested responseisve using dev tools mobile view. 
+
+Markup was validated via https://validator.w3.org/ no errors were found.
+
+CSS was validated via http://jigsaw.w3.org/css-validator/ no errors were found.
+
+    1. On page load:
+
+    Enter name modal. 
+        Clicked on button to start game without entering a name. 
+        Clicked outside the modal to make sure that user cannot get passed without entering a name. Also pressed Esc.
+        When alert appears on blank field also tried clicking the screen and pressing Esc to make sure that user cannot skip the enter name modal/alert.  
+        Entered a name then clicked on button. Checked to see that correct name appreared on screen.  
+
+
+    Main game. 
+        Clicked on buttons to make sure that selected button changed color. 
+        Clicked on different button within the same language to ensure that it was restored to its orginial color. 
+
+
+        Let timer run down to ensure that the restart modal appeared. 
+        Clicked outside the modal to ensure that it was not possible to bypass modal.
+        Pressed Esc to ensure that it was not possible to bypass modal.
+        Clicked on 'restart' to test wheater or not the page reloaded. 
+
+
 
 * Bugs
-  to do
+
+- Bugs that occured during production included. 
+
+ 
+- - Counter continued to run past zero even when user succesfullly completed the game.
+- Adding the Randomise feature caused buttons to Randomise on click as opposed to on page load. 
+
+- Enter name modal:
+    - User able to bypass enter name modal by clicking outside the modal. 
+    - User able to begin game without entering a name. 
+    - User able to bypass enter name modal/alert by clicking outside the alert when no username added.
+
+- User needs to enter name when restarting. 
 
 ## Deployment
 
-- To do
+- Depolyment was achvied via github at this link: https://jammerref2015.github.io/Frenchisfun/
+
 
 ## Credits
 
+
+
 ### Media
+
+- The images used in this application were obtained from Shutterstock. 
+
+Images need Credits!
 
 ### Acknowledgements
 
 - I received inspiration for this project from different langauge learning apps.
 
+
 ### Updates
 
--
-
-Updates
+04/09/20
+- Added modal for counter reaching zero
+- On successful word matches buttons now change to green and fade out. 
 
 03/09/20
 
@@ -85,7 +170,7 @@ Updates
 
 - Added countdown functionality. Popup now appears if user has completed a task in the set time.
 
-- 29/07/20
+29/07/20
 
 - index.html
 
