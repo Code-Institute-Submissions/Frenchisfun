@@ -82,9 +82,9 @@ $(document).ready(function () {
     $("#enterNameButton").click(function () {
         var str = $("#nameInput").val();
         if (str == "") {
-            alert("Please enter a name to begin.");
+            $("#enterNameVal").html("Enter Name");
         } else {
-            document.getElementById("name").innerHTML = str;
+            document.getElementById("name").innerHTML = str; // Replace with jQuery?
             countdown(1);
             $("#enterNameModal").modal("hide");
         }

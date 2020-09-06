@@ -136,3 +136,9 @@ body {
   text-align: center;
   color:#fff;
 }
+
+#enterNameVal {
+    color:red;
+    padding:2%;
+    font-weight:bold;
+}
