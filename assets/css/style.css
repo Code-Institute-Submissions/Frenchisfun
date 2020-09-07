@@ -6,54 +6,80 @@
 }
 
 body {
-  background: rgb(16 0 255 / 73%)
-  
+  background-color:  #574D68;
 }
 
-.englishBox {
-  padding-left: 0;
- background: rgb(16 0 255 / 73%);
-}
 
-.frenchBox {
-  padding-right: 0;
-  background: rgb(16 0 255 / 73%);
-  
-}
-
-/* Navbar styling */
-.navStyling {
+/* Navbar styling  */
+.headingStyling {
   font-family: "Comfortaa", sans-serif;
   font-weight: bold;
   letter-spacing: 1px;
+  text-align: center;
+  color:#F5F0F6;
+  padding:0.5%;
  }
+
+ .headingStyling {
+  font-family: "Comfortaa", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  color:#F5F0F6;
+  padding:0.5%;
+ }
+
+   .headingNameStyling {
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color:#F5F0F6;
+ } 
+ 
+ .headingCounterStyling{
+  font-family: "Comfortaa", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  color:#F5F0F6;
+  }
 
 /* French word card */
 .frenchCard {
   text-align: center;
-  background: rgb(16 0 255 / 73%);
+  background-color: #F5F0F6;
 }
 
 .frenchCard button {
   font-family: "Comfortaa", sans-serif;
   margin: 1%;
-  
 }
 
-/* textarea styling */
-
-#englishText {
-  resize: none;
+/* Styling to allow textarea boxes to fill col */ 
+.boxStyleFrench {
+    padding-right:0;
 }
 
-#frenchText {
-  resize: none;
+.boxStyleEnglish {
+    padding-left: 0;
+}
+
+
+@media only screen and (max-width: 570px) {
+  .boxStyleFrench {
+    padding-left:3.1%;
+    padding-right:3.1%;
+}
+
+.boxStyleEnglish {
+    padding-left:3.1%;
+    padding-right:3.1%;
+}
 }
 
 /* English word card */
 .englishCard {
   text-align: center;
-  background: rgb(16 0 255 / 73%)
+  background-color: #F5F0F6;
 }
 
 .englishCard button {
@@ -61,16 +87,29 @@ body {
   margin: 1%;
 }
 
+/* textarea styling */
+#englishText {
+  resize: none; /* Prevent user resizing textareas */ 
+}
+
+#frenchText {
+  resize: none;
+}
+
 /* English answer box */
 .englishBox {
   font-family: "Comfortaa", sans-serif;
   text-align: center;
+  background-color:  #F5F0F6;
+  padding: 0;
 }
 
 /* French answer box */
 .frenchBox {
   font-family: "Comfortaa", sans-serif;
   text-align: center;
+  background-color:  #F5F0F6;
+  padding:0;
 }
 
 /*Modal styling */
@@ -87,10 +126,10 @@ body {
 #welcomeImage {
   width: 100%;
   height: 100%;
-  pointer-events: none;
+  pointer-events: none; 
 }
 
-/*Image for Game complete / Time out */
+/*Image for Game complet / Time out */
 #gameCompleteImage {
   width: 100%;
   height: 50%;
@@ -103,7 +142,6 @@ body {
   height: 50%;
   pointer-events: none;
 }
-
 
 /* Class to fade out button on successful word match. */
     .removeButton {
@@ -132,13 +170,22 @@ body {
 .footerStyling {
     font-family: "Comfortaa", sans-serif;
     font-weight: bold;
-  letter-spacing: 1px;
-  text-align: center;
-  color:#fff;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#fff;
+    padding: 0.5%
 }
 
+/* Validation for blank text field on 'welcome' modal */ 
 #enterNameVal {
     color:red;
     padding:2%;
     font-weight:bold;
+}
+
+/* Nav styling */ 
+.navStyling {
+    text-align: center;
+    color:#fff;
+    padding:0.2%;
 }

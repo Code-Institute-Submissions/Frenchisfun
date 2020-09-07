@@ -13,25 +13,15 @@
 
 <body onload="randomiseWords()">
 	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light navStyling">
-		<a class="navbar-brand" href="#">le français est super !</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
-		<div class="collapse navbar-collapse" id="navbarText">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Name:
-						<p id="name"></p>
-						<span class="sr-only">(current)</span></a>
-				</li>
-			</ul>
-			<div id="counter" title="counterTitle"></div>
-			<!-- Countdown Timer -->
-		</div>
-	</nav>
 	<div class="container">
+		<div class="row">
+			<div class="col-sm col-md col-lg">
+				<h1 class="headingStyling"> Just a test</h1>
+				<p id="name" class="headingNameStyling"></p>
+				<div id="counter" class="headingCounterStyling" title="counterTitle"></div>
+			</div>
+		</div>
+
 		<!-- French words go here-->
 		<div class="row">
 			<div class="col-sm col-md col-lg">
@@ -57,7 +47,7 @@
 
 		<!-- Boxes -->
 		<div class="row">
-			<div class="col-sm col-md col-lg boxStyle">
+			<div class="col-sm col-md col-lg boxStyleFrench">
 				<div class="card">
 					<div class="card-body frenchBox">
 						<h3>French</h3>
@@ -65,7 +55,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm col-md col-lg boxStyle ">
+			<div class="col-sm col-md col-lg boxStyleEnglish">
 				<div class="card">
 					<div class="card-body englishBox">
 						<h3>English</h3>
@@ -109,10 +99,8 @@
 					<h5 class="modal-title">
 						<!-- id="enterNameModal"    -->
 						Welcome! Please enter your name!
-
 					</h5>
 					<input type="text" id="nameInput" placeholder="votre nom S'il vous plaît"/>
-
 				</div>
 					<div class="modal-body modalBodyBgColor">
 						<img src="assets/images/shutterstock_570361936.jpg" id="welcomeImage" draggable="false" alt="Game welcome image"/>
@@ -138,13 +126,11 @@
 						<img src="assets/images/shutterstock_1409674409.jpg" id="gameCompleteImage" draggable="false" alt="Game complete image"/>
                     </div>
 						<div class="modal-footer">
-
-							<button type="button" class="btn btn-primary" onclick="location.reload()">Restart</button>
+							<button type="button" id="restartButton" class="btn btn-primary">Play again</button>
 						</div>
 					</div>
 				</div>
 			</div>
-
 
 			<!-- Modal to run when counter time runs. -->
 			<div class="modal fade modalStyling" id="countdownPastModal" tabindex="-1" role="dialog"
@@ -152,23 +138,21 @@
 				<div class="modal-dialog modal-dialog-centered" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h5 class="modal-title">Oh merde! Time is up!</h5> <!--  id="gameCompleteModal" -->
+							<h5 class="modal-title">Time is up!</h5> <!--  id="gameCompleteModal" -->
 						</div>
 						<div class="modal-body modalBodyBgColor">
 							<img src="assets/images/shutterstock_1802442298.jpg" id="countdownPastImage" draggable="false" alt="Count down past image"/>
                     </div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-primary" onclick="location.reload()">Try again</button>
+								<button type="button" class="btn btn-primary" id="tryAgainButton">Try again</button>
 							</div>
 						</div>
 					</div>
 				</div>
 
-
 				<!-- Footer -->
 				<footer class="main-footer">
-					<!-- TO DO -->
-					<p class="footerStyling">2020 Adrian Looney</p>
+					<p class="footerStyling">2020 - Adrian Looney</p>
 				</footer>
 
 				<!-- Optional JavaScript -->

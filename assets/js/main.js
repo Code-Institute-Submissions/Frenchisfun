@@ -28,8 +28,6 @@ function countdown(minutes) {
             (seconds % 60 < 10 ? "0" : "") +
             (seconds % 60);
         seconds--;
-
-
         var myNodeList = $(".removeButton");
 
         if (seconds == 0) {
@@ -77,6 +75,14 @@ $(document).ready(function () {
             clearInterval();
         }
     }
+    // Reload page on click. 
+    $("#restartButton").click(function () {
+        location.reload();
+    });
+
+    $("#tryAgainButton").click(function () {
+        location.reload();
+    });
 
     // Enter name on page load.
     $("#enterNameButton").click(function () {

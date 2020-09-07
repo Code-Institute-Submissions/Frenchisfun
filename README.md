@@ -1,31 +1,38 @@
 
 
 
-
 # French / English word matching game
 
 // Include image here! 
 
-'French is fun' is a simple word matching game inspired by a word matching game that uses double sided magnets with the English
+'French is fun' is a simple word matching game inspired by a real world word matching game that uses double sided magnets with the English
 word on one side, the French word on the other. 
 As someone learning the French langauge i wanted to develop a fun word matching game aimed at people that are at the 
 early stages of learning French. The aim is Très facile! Simply match the English word to the corresponding French word! 
 Try to match all the words before the time runs out! 
 
+I wanted to create a fun game that also teaches basic vocabulary. 
+
 
 ## UX
 
-- The colors for this app were intended to be bright. 
+- As someone who is themselve learning a language i have used a number of applications in the past so i was inspired 
+by those. 
 
-- Wire frames are available in the folder. 
+- Wire frames for this project are available in the Mockups folder. 
+
+Useful: useful to the user who wants to interact with your product.
+Useable: when interacting with your product, it is also an enjoyable experience - it generates a positive emotional response.
+Valuable: valuable to the user and the product owner.
 
 ## Features
 
-- The game features a selection of words in English and French. 
+- The game features a selection of words in English and French. The aim of the game is the user has to match the English/French words
+in the alloted time.  
 
 ### Existing Features
 
-- The abilty to add a name. 
+- User can display a name.  
 
 ### Possible features that could be included.
 
@@ -41,9 +48,9 @@ completing a level.
 
 - Different style of game such as including a series of words alongside an image. The user selects the correct word to match the image. 
 
-- Allow user to create a profile. 
+- Allow user to create a profile. This can include the abilty to safe scores/times. 
 
-- Enable user to have a word count showing the words that they have learned. 
+- Enable user to have a word list showing the words that they have learned. 
 
 - Dark mode feature. 
 
@@ -61,6 +68,9 @@ completing a level.
   - The project uses a **Bootstrap** framework.
 - [Google fonts](https://fonts.google.com) - The project uses google fonts.
 - [jQuery] (https://jquery.com/)  - Many of the features in this application use jquery. 
+- [Coolors](https://coolors.co) - Coolors was used to aid in creating a colour scheme. Using colours that complimented each other. 
+
+
 
 ## Testing
 
@@ -110,6 +120,10 @@ CSS was validated via http://jigsaw.w3.org/css-validator/ no errors were found.
     - User able to bypass enter name modal/alert by clicking outside the alert when no username added.
 
 - User needs to enter name when restarting. 
+    - Need to implement something that would not require the same user to constantly re-enter their name. 
+
+- User name and counter was not visible when accessed on mobile without clicking on the accordion button:
+    - Replaced navbar with a row with styling. 
 
 ## Deployment
 
