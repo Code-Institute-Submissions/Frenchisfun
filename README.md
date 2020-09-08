@@ -25,9 +25,49 @@ Useful: useful to the user who wants to interact with your product.
 Useable: when interacting with your product, it is also an enjoyable experience - it generates a positive emotional response.
 Valuable: valuable to the user and the product owner.
 
+
+User Stories:
+
+As a product owner...
+
+ I want to provide a fun a way to learn the French langauge. 
+
+Matching games have been shown to provide the following benifits: 
+
+improve concentration
+train visual memory
+increase short term memory
+increase attention to detail
+improve the ability to find similarities and differences in objects
+help to classify objects that are grouped by similar traits
+improve vocabulary
+
+Source: https://www.montessoriprintshop.com/benefits-of-match-up-and-memory-games.html
+
+
+As a user: 
+
+- I want to improve and increase my French vocabulary by using this app.  
+
+Color: 
+
+- I went with a mostly off-white color to contrast the colors of the buttons in their various states. 
+- A light-ish purple color was was used for the border. 
+- coolors.co was used to help create a balanced color scheme. 
+
+Typography
+
+I decided to use just one font, Comfortaa. I wanted a roundish font. 
+
+Landing page:
+
+- 'Welcome' modal appears on page load. This features an image which contains a colorful French illustration. 
+- Validation text is in bold red which contrasts against the white background. 
+
 ## Features
 
-- The game features a selection of words in English and French. The aim of the game is the user has to match the English/French words
+- The game features a selection of words in English and French on a single page. 
+- The aim of the game is the user has to match the English/French words
 in the alloted time.  
 
 ### Existing Features
@@ -69,10 +109,30 @@ completing a level.
 - [Google fonts](https://fonts.google.com) - The project uses google fonts.
 - [jQuery] (https://jquery.com/)  - Many of the features in this application use jquery. 
 - [Coolors](https://coolors.co) - Coolors was used to aid in creating a colour scheme. Using colours that complimented each other. 
-
-
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+  - used to structure the website and create the essential elements of my site. 
+- [CSS](https://www.w3.org/Style/CSS/Overview.en.html) 
+  - used to style the markup and create custom styling. 
+- [Google Developer tools](https://developers.google.com/web/tools/chrome-devtools/) 
+  - to help solve a bug and help style my elements before writing code. 
+- [GitPod](https://www.gitpod.io/) 
+  - used as the development environment to help write my code. 
+- [Git](https://git-scm.com/) 
+  - to enable version control and help commit changes to my site. 
+- [GitHub](https://github.com/) 
+  - used to store the source code and repository. 
+- [GitHub Pages](https://pages.github.com/) 
+  - used to deploy my website.
+- [Balsamiq](https://balsamiq.com/) 
+  - used to help create my wireframes. 
+- [Grammarly](https://app.grammarly.com/)
+    - used to rectify any grammar errors.
 
 ## Testing
+
+#### Google Developer Tools 
+
+
 
 - The application was tested manually. This involved the following steps. 
 
