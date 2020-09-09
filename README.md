@@ -207,6 +207,22 @@ Images need Credits!
 
 ### Updates
 
+09/09/20
+
+Changed styling on boxStyleFrench and boxStyleEnglish. Media query is now min-width not max width. 
+
+07/09/20
+
+Some code cleanup. Replaced button onClicks with Jquery click functions. 
+Color shceme updated. 
+Styling updates. Textarea boxes now take up more row space elementing the gap that existed in the middle of the page. Padding also reduced. 
+Heading redesigned to fix the counter and name display issue that was present on mobile/tablet views. 
+
+
+06/09/20
+
+Validation for welcome modal updated. Text now appears on the modal when form is left blank. Alert no longer appears.
+
 04/09/20
 - Added modal for counter reaching zero
 - On successful word matches buttons now change to green and fade out. 

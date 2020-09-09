@@ -56,23 +56,20 @@ body {
 
 /* Styling to allow textarea boxes to fill col */ 
 .boxStyleFrench {
+  padding-right:3.1%; 
+}
+
+.boxStyleEnglish {
+   padding-left:3.1%;
+} 
+
+@media only screen and (min-width: 570px) {
+  .boxStyleFrench {
     padding-right:0;
 }
 
 .boxStyleEnglish {
     padding-left: 0;
-}
-
-
-@media only screen and (max-width: 570px) {
-  .boxStyleFrench {
-    padding-left:3.1%;
-    padding-right:3.1%;
-}
-
-.boxStyleEnglish {
-    padding-left:3.1%;
-    padding-right:3.1%;
 }
 }
 
