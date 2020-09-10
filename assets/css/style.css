@@ -2,65 +2,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Dosis&display=swap");
 
 * {
-  margin: 0;
+    margin: 0;
 }
 
 body {
-  background-color:  #574D68;
+    background-color:  #574D68;
 }
-
 
 /* Navbar styling  */
 .headingStyling {
-  font-family: "Comfortaa", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-align: center;
-  color:#F5F0F6;
-  padding:0.5%;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#F5F0F6;
+    padding:0.5%;
  }
 
- .headingStyling {
-  font-family: "Comfortaa", sans-serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-align: center;
-  color:#F5F0F6;
-  padding:0.5%;
+.headingStyling {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#F5F0F6;
+    padding:0.5%;
  }
 
-   .headingNameStyling {
-  font-family: "Comfortaa", sans-serif;
-  letter-spacing: 1px;
-  text-align: center;
-  color:#F5F0F6;
+.headingNameStyling {
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#F5F0F6;
  } 
  
- .headingCounterStyling{
-  font-family: "Comfortaa", sans-serif;
-  letter-spacing: 1px;
-  text-align: center;
-  color:#F5F0F6;
+.headingCounterStyling{
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color:#F5F0F6;
   }
 
 /* French word card */
 .frenchCard {
-  text-align: center;
-  background-color: #F5F0F6;
+    text-align: center;
+    background-color: #F5F0F6;
 }
 
 .frenchCard button {
-  font-family: "Comfortaa", sans-serif;
-  margin: 1%;
+    font-family: "Comfortaa", sans-serif;
+    margin: 1%;
 }
 
 /* Styling to allow textarea boxes to fill col */ 
 .boxStyleFrench {
-  padding-right:3.1%; 
+    padding-right:3.1%; 
 }
 
 .boxStyleEnglish {
-   padding-left:3.1%;
+    padding-left:3.1%;
 } 
 
 @media only screen and (min-width: 570px) {
@@ -75,69 +74,69 @@ body {
 
 /* English word card */
 .englishCard {
-  text-align: center;
-  background-color: #F5F0F6;
+    text-align: center;
+    background-color: #F5F0F6;
 }
 
 .englishCard button {
-  font-family: "Comfortaa", sans-serif;
-  margin: 1%;
+    font-family: "Comfortaa", sans-serif;
+    margin: 1%;
 }
 
 /* textarea styling */
 #englishText {
-  resize: none; /* Prevent user resizing textareas */ 
+    resize: none; /* Prevent user resizing textareas */ 
 }
 
 #frenchText {
-  resize: none;
+    resize: none;
 }
 
 /* English answer box */
 .englishBox {
-  font-family: "Comfortaa", sans-serif;
-  text-align: center;
-  background-color:  #F5F0F6;
-  padding: 0;
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    background-color:  #F5F0F6;
+    padding: 0;
 }
 
 /* French answer box */
 .frenchBox {
-  font-family: "Comfortaa", sans-serif;
-  text-align: center;
-  background-color:  #F5F0F6;
-  padding:0;
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+    background-color:  #F5F0F6;
+    padding:0;
 }
 
 /*Modal styling */
 .modalStyling {
-  font-family: "Comfortaa", sans-serif;
+    font-family: "Comfortaa", sans-serif;
 }
 
 /*Modal background */
 .modalBodyBgColor {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 /* Welcome image */
 #welcomeImage {
-  width: 100%;
-  height: 100%;
-  pointer-events: none; 
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
 }
 
 /*Image for Game complet / Time out */
 #gameCompleteImage {
-  width: 100%;
-  height: 50%;
-  pointer-events: none;
+    width: 100%;
+    height: 50%;
+    pointer-events: none;
 }
 
 /* Image for time up */
 #countdownPastImage{
-  width: 100%;
-  height: 50%;
-  pointer-events: none;
+    width: 100%;
+    height: 50%;
+    pointer-events: none;
 }
 
 /* Class to fade out button on successful word match. */

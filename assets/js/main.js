@@ -42,7 +42,7 @@ function countdown(minutes) {
 $(document).ready(function () {
     // Show pop up on page load
     $("#enterNameModal").modal("show");
-    // english word > french word
+    // Select english word > french word
     $(".frbtn").click(function () {
         $(".frbtn").removeClass("btn-secondary").addClass("btn-primary");
         $(this).removeClass("btn-primary").addClass("btn-secondary");
@@ -55,7 +55,7 @@ $(document).ready(function () {
         }
     });
 
-    // french word > english word
+    // Select french word > english word
     $(".engbtn").click(function () {
         $(".engbtn").removeClass("btn-secondary").addClass("btn-primary");
         $(this).removeClass("btn-primary").addClass("btn-secondary");
@@ -90,7 +90,7 @@ $(document).ready(function () {
         if (str == "") {
             $("#enterNameVal").html("Enter Name");
         } else {
-            document.getElementById("name").innerHTML = str; // Replace with jQuery?
+            document.getElementById("name").innerHTML = str;
             countdown(1);
             $("#enterNameModal").modal("hide");
         }
