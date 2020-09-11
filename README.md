@@ -264,6 +264,7 @@ completing a level.
 
 11/09/20
   - Images compressed in an attempt to increase performance. Readme updated. 
+  - Third party Libraries now stored in assets folder. Removing CDN links
 
 10/09/20
   - Code formatting.
