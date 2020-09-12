@@ -20,7 +20,7 @@ function randomiseWords() {
 
 // Counter
 function countdown(minutes) {
-    let seconds = minutes * 60;
+    let seconds = minutes * 80;
     var interval = setInterval(() => {
         counter.innerHTML =
             parseInt(seconds / 60) +

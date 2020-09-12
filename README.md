@@ -59,11 +59,11 @@ The **goal** for this project is to make people was to make an easy to use word 
 * As a **site owner**, I want to provide users with a fun way to learn the French language.
 * As a **site owner**, I want to communicate my love for the French language by including images that highlight many French traditions.
 * Matching games have been shown to provide the following benefits:
-  * improve concentration
-  * train visual memory
-  * increase short term memory
-  * increase attention to detail improve the ability to find similarities and differences in objects
-  * help to classify objects that are grouped by similar traits and can improve vocabulary
+  * Improve concentration
+  * Train visual memory
+  * Increase short term memory
+  * Increase attention to detail improve the ability to find similarities and differences in objects
+  * Help to classify objects that are grouped by similar traits and can improve vocabulary
 
 Source: https://www.montessoriprintshop.com/benefits-of-match-up-and-memory-games.html
 
@@ -108,7 +108,7 @@ I went with Google Fonts [Comfortaa](https://fonts.googleapis.com/css2?family=Co
 
 ## Wireframing ##
 ---
-For **wireframing** I used Balsamiq. This produced some **basic** wireframes, used to get an overall **feel** for what would go where and how things would look on different screen sizes.
+Balsamiq was used for wireframing. This produced some basic wireframes, used to get an overall feeling for what would go where and how things would look on different screen sizes.
 
 In the early stage of the project the buttons were displayed on either side of the <textarea>'s'. Placing in on top and underneath worked better in regards to mobile design.
 
@@ -205,25 +205,26 @@ completing a level.
         - Let timer run down to ensure that the timer expired modal appeared and counter did not go in to minus.
           - Clicked outside the modal to make sure that user could not bypass modal. Also pressed Esc.
           - Checked that restart button reloaded the page.
-        - Matched all buttons to ensure that a successfully completed modal appears and counter stops.
+        - Matched all buttons to ensure that a 'Super' modal appears and counter stops.
           - Clicked outside the modal to make sure that user could not bypass modal. Also pressed Esc.
           - Checked that restart button reloaded the page.
 
     - All of these actions were repeated with the console open. No errors were found.
+
     - The following bugs occurred during development
 
     - Counter issue:
-      - Counter continued to run past zero even when user successfully completed the game.
+      - Counter continued to run past zero even when user successfully completed the game. ountdown() updated to stop clock when a user completes the game.
     - Randomise feature:
-      - Adding the randomise feature caused buttons to randomise on click as opposed to on page load.
+      - Adding the randomise feature caused buttons to randomise on click as opposed to on page load. This was corrected with changes made to the function.
     - Rows too close to each other:
-      - Set margins and padding.
+      - Set margins and padding correct this.
     - Enter name modal:
-      - User able to bypass enter name modal by clicking outside the modal.
-      - User able to begin game without entering a name.
+      - User able to bypass enter name modal by clicking outside the modal. This was corrected by adding data-keyboard="false" data-backdrop="static".
+      - User able to begin game without entering a name. An if statement was added to check for a blank field.  
     - Timer expired modal:
-      - User able to bypass timer expired modal by clicking outside the modal.
-      - User able to resize text-areas which affected the positioning of other elements.  
+      - User able to bypass timer expired modal by clicking outside the modal. his was corrected by adding data-keyboard="false" data-backdrop="static".
+    - User able to resize text-areas which affected the positioning of other elements.  
       - Styling was added to prevent this.
     - Modal images too large:
       - Added styling to the modals which fixed this.
@@ -262,9 +263,11 @@ completing a level.
 
 ### Updates
 
+12/09/20
+  - Styling for English and French boxes updated. Readme updated. Counter updated, time increased.
+
 11/09/20
-  - Images compressed in an attempt to increase performance. Readme updated. 
-  - Third party Libraries now stored in assets folder. Removing CDN links
+  - Images compressed in an attempt to increase performance. Readme updated.
 
 10/09/20
   - Code formatting.
