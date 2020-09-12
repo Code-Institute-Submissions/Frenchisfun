@@ -41,7 +41,15 @@ function countdown(minutes) {
 }
 $(document).ready(function () {
     // Show pop up on page load
-    $("#enterNameModal").modal("show");
+    let name = localStorage.getItem("name"); // Store username. 
+
+    if (!name) {
+        $("#enterNameModal").modal("show");
+    } else {
+        document.getElementById("name").innerHTML = name;
+    }
+
+
     // Select english word > french word
     $(".frbtn").click(function () {
         $(".frbtn").removeClass("btn-secondary").addClass("btn-primary");
@@ -90,6 +98,7 @@ $(document).ready(function () {
         if (str == "") {
             $("#enterNameVal").html("Enter Name");
         } else {
+            localStorage.setItem("name", str)
             document.getElementById("name").innerHTML = str;
             countdown(1);
             $("#enterNameModal").modal("hide");
