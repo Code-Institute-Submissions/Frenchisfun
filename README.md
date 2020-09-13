@@ -100,10 +100,9 @@ I went with Google Fonts [Comfortaa](https://fonts.googleapis.com/css2?family=Co
 - The selected buttons are a grey color.
 - Successfully matched buttons turn green before fading out as a visual cue to the player that a match has been made.
 
-* For some headers and titles: #F5F0F6 ![#F5F0F6](https://placehold.it/15/F5F0F6/000000?text=+) #F5F0F6
-* For body background: #574D68 ![#574D68](https://placehold.it/15/#574D68/000000?text=+) #574D68
-* For additional backgrounds:  #F5F0F6 ![#F5F0F6](https://placehold.it/15/#F5F0F6/000000?text=+) #F5F0F6
-
+* For some headers and titles:`#F5F0F6`#F5F0F6
+* For body background:        `#574D68`#574D68
+* For additional backgrounds: `#F5F0F6`#F5F0F6
 
 ## Wireframing ##
 ---
