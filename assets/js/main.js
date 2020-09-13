@@ -30,10 +30,10 @@ function countdown(minutes) {
         seconds--;
         var myNodeList = $(".removeButton");
 
-        if (seconds == 0) {
+        if (seconds == 0) { // Counter reaches zero
             clearInterval(interval);
             $("#countdownPastModal").modal("show");
-        } else if (myNodeList.length >= 26) {
+        } else if (myNodeList.length >= 26) { // All words have been successfully paired
             clearInterval(interval);
             $("#gameCompleteModal").modal("show");
         }
@@ -41,14 +41,14 @@ function countdown(minutes) {
 }
 $(document).ready(function () {
     // Show pop up on page load
-    let name = localStorage.getItem("name"); // Store username. 
+    let name = localStorage.getItem("name");
 
     if (!name) {
         $("#enterNameModal").modal("show");
     } else {
         document.getElementById("name").innerHTML = name;
+        countdown(1);
     }
-
 
     // Select english word > french word
     $(".frbtn").click(function () {
@@ -80,7 +80,7 @@ $(document).ready(function () {
         var myNodeList = $(".removeButton");
         if (myNodeList.length >= 26) {
             $("#gameCompleteModal").modal("show");
-            clearInterval();
+            clearInterval(); //Stop counter
         }
     }
     // Reload page on click. 
