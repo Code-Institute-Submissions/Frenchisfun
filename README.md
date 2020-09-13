@@ -100,15 +100,6 @@ I went with Google Fonts [Comfortaa](https://fonts.googleapis.com/css2?family=Co
 - The selected buttons are a grey color.
 - Successfully matched buttons turn green before fading out as a visual cue to the player that a match has been made.
 
-* For some headers and titles: `#F5F0F6` #F5F0F6
-* For body background:         `#574D68` #574D68
-* For additional backgrounds:  `#F5F0F6` #F5F0F6
-
-
-```
-color:#F5F0F6;
-```
-
 ## Wireframing ##
 ---
 Balsamiq was used for wireframing. This produced some basic wireframes, which were used to get an overall feeling for what would go where and how things would look on different screen sizes.
