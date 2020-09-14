@@ -1,4 +1,6 @@
 
+
+
 # French is fun -  A fun French / English word matching game
 
 ![readme image](/assets/images/readme_image.jpg)
@@ -42,7 +44,7 @@ The **goal** for this project was to make an easy to use word matching game that
 
 ### User Goals ###
 
-* Provide players with a fun way to learn the French language.
+* Provide players a fun way to learn the French language.
 * To provide a tool to help increase vocabulary.
 
 ### User Stories ###
@@ -268,127 +270,7 @@ The website was developed using both *GitPod* and using *Git* pushed to *GitHub*
 
 ## Credits
 
-- Images available from Shutterstock. 
-
-
-### Media
-
-- The images used in this application were obtained from Shutterstock.
-  - Sad France image by svtdesign.
-  - French dogs image by Bibadash
-  - French characters by Sabelskaya
-
-### Acknowledgements
-- I received inspiration for this project from different language learning apps.
-- Thank you to the people that help me test and fine tune the game.
-- Thank you to my mentor at the code institute, Caleb Mbakwe.
-- Thank you to Edward Walsh for testing and proof reading the Readme.
-
-
-### Updates
-
-14/09/20
-  - Text changed in enter name modal.
-  - Readme updated.
-
-13/09/20
-  - Main.js updated to fix bug when a player restarted the page the counter would not load.
-  - Readme updated, checked with gramerly.com.
-  - Some comments added to main.js
-
-12/09/20
-  - Styling for English and French boxes updated. Readme updated. Counter updated, time increased.
-  - Added the ability for a player to store their username name via local storage eliminating the need to re-enter name on restart.
-
-11/09/20
-  - Images are compressed in an attempt to increase performance. Readme updated.
-
-10/09/20
-  - Code formatting.
-  - Readme update.
-
-06/09/20
-  - Validation for enter name modal updated. Text now appears on the modal when the form is left blank. Alert no longer appears.
-
-04/09/20
-  - Added modal for counter reaching zero
-  - On successful word matches, buttons now change to green and fade out.
-
-03/09/20
-  - Added modal for counter reaching zero
-  - On successful word matches, buttons now change to green and fade out.
-
-03/09/20
-  - Randomize the location of buttons on page load.
-  - Added styling to text areas to prevent the player from re-sizing.
-  - Increased word count.
-  - Added some styling.
-  - Some code tiding.
-
-
-02/09/20
-  - The countdown timer now stops on the successful completion of the game.
-
-01/09/20
-  - Modal now appears when all buttons have been successfully matched.
-
-01/09/20
-- Added modal that appears on page load to request player name which is then added to the page.
-- Added a timer that begins when the player clicks the let's begin button.
-- A modal appears when the timer gets to zero. The Player has the option of restarting the game.
-- Added an image to enter name modal and changed the background to match the image. Added temp text to 'enter name' modal.
-- Change font sitewide.
-
-17/08/20
-- Added countdown functionality. Popup now appears if the player has completed a task in the set time.
-
-29/07/20
-- index.html
-  - Added id's to French buttons.
-  - Added id's to English buttons.
-  - Added values to English buttons.
-- main.js
-  - Added functionality to buttons. They now change color when selected. Buttons now disappear when words correctly match.
-- style.css
-  - Added remove class.
-on to prevent this from happening.
-    - Player needs to enter name when restarting:
-      - implemented local storage to store player name and therefore remove the need to constantly re-enter name on page reload. Included a button to allow the player to change name.
-    - Button sections styling issue.
-      - Removing buttons resulted in rows getting smaller. Using a different technique to remove the buttons fixed this issue.
-    - The Counter did not show if the player reloaded the page.
-      - Updated main.js to run countdown if a player's name is in storage. Counter now appears.
-    - Multiple counters running if the player's name changed during a game.
-      - This bug needs to be corrected. The game should restart upon a name change.
-
-
-    - The following bugs were discovered upon validation/testing
-
-    - 'enter name' modal Firefox issue:
-      - When clicking on the start button with a blank text field the validation text read 'Enter Nome'. Font not displaying correctly.
-    - 'time out' modal Firefox issue:
-      - Image is not displaying correctly.
-    - The player name and counter were not visible when accessed on mobile without clicking on the accordion button:
-      - Replaced navbar with a row with styling.
-
-## Deployment
-
-The website was developed using both *GitPod* and using *Git* pushed to *GitHub*, which hosts the repository. I made the following steps to deploy the site using *GitHub Pages*:
-
-- Opened up **GitHub** in the browser.
-- Signed in with my **username** and **password**.
-- Selected my **repositories**.
-- Navigated to **Jammerref2015/Frenchisfun**.
-- In the top navigation clicked **settings**.
-- Scrolled down to the **GitHub Pages** area.
-- Selected **Master Branch** from the **Source** dropdown menu.
-- Clicked to **confirm** my **selection**.
-- [Frenchisfun](https://jammerref2015.github.io/Frenchisfun/) is now **live** on **GitHub Pages**.
-
-
-## Credits
-
-- Images available from Shutterstock. 
+- Images available from Shutterstock.
 
 
 ### Media
