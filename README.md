@@ -42,7 +42,7 @@ The **goal** for this project was to make an easy to use word matching game that
 
 ### User Goals ###
 
-* Provide players a fun way to learn the French language.
+* Provide players with a fun way to learn the French language.
 * To provide a tool to help increase vocabulary.
 
 ### User Stories ###
