@@ -100,9 +100,7 @@ I went with Google Fonts [Comfortaa](https://fonts.googleapis.com/css2?family=Co
 - The selected buttons are a grey color.
 - Successfully matched buttons turn green before fading out as a visual cue to the player that a match has been made.
 
-* For some headers and titles: #F5F0F6 ![#F5F0F6](https://placehold.it/15/F5F0F6/000000?text=+) #F5F0F6
-* For body background: #574D68 ![#574D68](https://placehold.it/15/#574D68/000000?text=+) #574D68
-* For additional backgrounds:  #F5F0F6 ![#F5F0F6](https://placehold.it/15/#F5F0F6/000000?text=+) #F5F0F6
+
 
 
 ## Wireframing ##
@@ -188,7 +186,7 @@ completing a level.
     - On page load:
 
     - Enter name modal:
-        - Checked that the 'welcome' modal appeared on page load.
+        - Checked that the 'enter name' modal appeared on page load.
         - Clicked on the button to start the game without entering a name. Validation appeared as intended.
         - Clicked outside the modal to make sure that the player could not bypass the modal without entering a name. Also pressed Esc.
         - Checked to ensure that validation text appeared when the text field was left blank.   
@@ -248,8 +246,10 @@ completing a level.
 
     - The following bugs were discovered upon validation/testing
 
-    - 'Welcome' modal Firefox issue:
-      - When clicking on the start button with a blank text field the validation text read 'Enter Nome'.
+    - 'enter name' modal Firefox issue:
+      - When clicking on the start button with a blank text field the validation text read 'Enter Nome'. Font not displaying correctly.
+    - 'time out' modal Firefox issue:
+      - Image is not displaying correctly.
     - The player name and counter were not visible when accessed on mobile without clicking on the accordion button:
       - Replaced navbar with a row with styling.
 
@@ -270,6 +270,7 @@ The website was developed using both *GitPod* and using *Git* pushed to *GitHub*
 
 ## Credits
 
+- Images available from Shutterstock. 
 
 
 ### Media
@@ -288,6 +289,10 @@ The website was developed using both *GitPod* and using *Git* pushed to *GitHub*
 
 ### Updates
 
+14/09/20
+  - Text changed in enter name modal.
+  - Readme updated.
+
 13/09/20
   - Main.js updated to fix bug when a player restarted the page the counter would not load.
   - Readme updated, checked with gramerly.com.
@@ -305,7 +310,7 @@ The website was developed using both *GitPod* and using *Git* pushed to *GitHub*
   - Readme update.
 
 06/09/20
-  - Validation for welcome modal updated. Text now appears on the modal when the form is left blank. Alert no longer appears.
+  - Validation for enter name modal updated. Text now appears on the modal when the form is left blank. Alert no longer appears.
 
 04/09/20
   - Added modal for counter reaching zero
@@ -333,7 +338,7 @@ The website was developed using both *GitPod* and using *Git* pushed to *GitHub*
 - Added modal that appears on page load to request player name which is then added to the page.
 - Added a timer that begins when the player clicks the let's begin button.
 - A modal appears when the timer gets to zero. The Player has the option of restarting the game.
-- Added an image to welcome modal and changed the background to match the image. Added temp text to 'welcome' modal.
+- Added an image to enter name modal and changed the background to match the image. Added temp text to 'enter name' modal.
 - Change font sitewide.
 
 17/08/20
