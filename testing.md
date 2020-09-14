@@ -21,17 +21,20 @@
     - On page load:
 
     - Main page:  
-        ![enter name image](/testing_photos/Main_image_sm.JPG.jpg)
+        ![enter name image](/testing_photos/Main_image_sm.jpg)
+
+      
 
     - Enter name modal:
         - Checked that the 'enter name' modal appeared on page load.
         - Clicked on the button to start the game without entering a name. Validation appeared as intended.
         - Clicked outside the modal to make sure that the player could not bypass the modal without entering a name. Also pressed Esc.
         - Checked to ensure that validation text appeared when the text field was left blank.   
-        - Entered a name in the text field then click on the start button.
+        - Entered a name in the text field then click on the start button. 
 
         - Enter name modal validation 
-        ![enter name image](/testing_photos/Enter name validation_sm.JPG.jpg)
+        ![enter name image](/testing_photos/Enter_name_validation_sm.jpg)
+    
 
     - Change name button:
         - Clicked on the change name button to test if the enter name modal appeared.
