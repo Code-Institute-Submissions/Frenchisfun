@@ -23,18 +23,14 @@
     - Main page:  
         ![enter name image](/testing_photos/Main_image_sm.jpg)
 
-      
-
     - Enter name modal:
         - Checked that the 'enter name' modal appeared on page load.
-        - Clicked on the button to start the game without entering a name. Validation appeared as intended.
-        - Clicked outside the modal to make sure that the player could not bypass the modal without entering a name. Also pressed Esc.
-        - Checked to ensure that validation text appeared when the text field was left blank.   
-        - Entered a name in the text field then click on the start button. 
+        - Clicked on the button to start the game without entering a name. Validation appeared as intended.validation text appeared when the text field was left blank. \
 
-        - Enter name modal validation 
-        ![enter name image](/testing_photos/Enter_name_validation_sm.jpg)
-    
+![enter name image](/testing_photos/Enter_name_validation_sm.jpg)
+
+        - Clicked outside the modal to make sure that the player could not bypass the modal without entering a name. Also pressed Esc.
+        - Entered a name in the text field then click on the start button. 
 
     - Change name button:
         - Clicked on the change name button to test if the enter name modal appeared.
@@ -49,13 +45,20 @@
         - Clicked on various buttons to make sure that the selected button changed color.
           - Grey when selected.
           - Restored to blue when a different button in the same language group was selected.
-          - On a successful match checked that buttons changed to green, faded out, and became unselect-able.  
+          - On a successful match checked that buttons changed to green, faded out, and became unselect-able.\ 
+        
+ ![Successful_matches_image](/testing_photos/Successful_matches_sm.png)
+
         - Let the timer run down to ensure that the timer expired modal appeared and the counter did not go into minus.
           - Clicked outside the modal to make sure that could not bypass modal. Also pressed Esc.
           - Checked that the restart button reloaded the page.
+![timeout_image](/testing_photos/time_out_modal_images_sm.jpg)
+
         - Matched all buttons to ensure that a 'Super' modal appears and counter stops.
           - Clicked outside the modal to make sure that the player could not bypass the modal. Also pressed Esc.
           - Checked that the restart button reloaded the page.
+![success_modal_image](/testing_photos/success_modal_sm.png)
+
 
     - All of these actions were repeated with the console open. No errors were found.
 
