@@ -21,7 +21,8 @@
 				<p class="headingNameStyling">
 					<span id="name"></span>
 					<svg width="1em" height="1em" data-toggle="modal" data-target="#enterNameModal" viewbox="0 0 16 16"
-						class="bi bi-pen d-inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						class="bi bi-pen d-inline" alt="change user name" fill="currentColor"
+						xmlns="http://www.w3.org/2000/svg">
 						<path fill-rule="evenodd"
 							d="M13.498.795l.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z" />
 					</svg>
@@ -97,7 +98,6 @@
 		</div>
 	</div>
 
-	<!-- on load popup-->
 	<!-- Modal to enter user name. -->
 	<div class="modal fade modalStyling" id="enterNameModal" tabindex="-1" role="dialog"
 		aria-labelledby="enterNameModal" aria-hidden="true" data-keyboard="false" data-backdrop="static">
@@ -105,7 +105,6 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h3 class="modal-title">
-						<!-- id="enterNameModal"    -->
 						Salut! Please enter your name!
 					</h3>
 					<input type="text" id="nameInput" placeholder="Name"/>
@@ -123,13 +122,13 @@
 			</div>
 		</div>
 
-		<!-- Modal to run when counter time runs out or on game complete. -->
+		<!-- Modal to run on game complete. -->
 		<div class="modal fade modalStyling" id="gameCompleteModal" tabindex="-1" role="dialog"
 			aria-label="gameCompleteModalPopUp" aria-hidden="true" data-keyboard="false" data-backdrop="static">
 			<div class="modal-dialog modal-dialog-centered" role="document">
 				<div class="modal-content">
 					<div class="modal-header">
-						<h5 class="modal-title">Super!</h5> <!-- id="gameCompleteModal" -->
+						<h5 class="modal-title">Super!</h5>
 					</div>
 					<div class="modal-body modalBodyBgColor">
 						<img src="assets/images/shutterstock_1409674409-min.jpg" id="gameCompleteImage" draggable="false" alt="Game complete image"/>
@@ -167,12 +166,7 @@
 				<!-- Optional JavaScript -->
 				<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-				<script src="assets/js/jQuery.js"></script>
-
-				<!-- 
-				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-					integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-					crossorigin="anonymous"></script> -->
+				<script src="assets/js/libraries/jQuery.js"></script>
 				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 				<script src="assets/js/words.js"></script>
 				<script src="assets/js/main.js"></script>
