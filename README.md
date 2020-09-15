@@ -93,21 +93,18 @@ I went with Google Fonts [Comfortaa](https://fonts.googleapis.com/css2?family=Co
 
 - I went with a mostly off-white color to contrast the colors of the buttons in their various states.
 - A light-ish purple color was used for the border.
-- coolors.co was used to help create a balanced color scheme.
-- Images with a wide range of colors and a French theme were used.
+- I used [coolors.co](https://coolors.co/) to help create a balanced color scheme.
+- Images/illustrations with a wide range of colors and a French theme were used.
 - Validation text is in bold red which contrasts against the white background.
 - The buttons are blue which contrasts nicely with the off-white background.
 - The selected buttons are a grey color.
 - Successfully matched buttons turn green before fading out as a visual cue to the player that a match has been made.
 
-
-
-
 ## Wireframing ##
 ---
 Balsamiq was used for wireframing. This produced some basic wireframes, which were used to get an overall feeling for what would go where and how things would look on different screen sizes.
 
-In the early stage of the project, the buttons were displayed on either side of the <textarea>'s'. Placing in on top and underneath worked better in regards to mobile design.
+In the early stage of the project, the buttons were displayed on either side of the textarea's. Placing in on top and underneath worked better in regards to mobile design.
 
 
 ## Features ##
@@ -121,7 +118,7 @@ In the early stage of the project, the buttons were displayed on either side of 
 
 **Features** that will be **implemented** in the **future:**
 
-* The ability to change the difficulty. Perhaps by adjusting to the countdown time. For example, an easy difficulty level providing more time in which to complete the game.
+* The ability to change the difficulty. Perhaps by adjusting the countdown time. For example, an easy difficulty level providing more time in which to complete the level.
 
 * Turn the counter off. Learn without the pressure of the timer.
 
@@ -175,15 +172,20 @@ completing a level.
 - CSS was validated via http://jigsaw.w3.org/css-validator/ - no errors were found.
 - JS was validated via https://jshint.com/ - no major issues were found.
 
-
 - Page loading speed was tested using via chrome Developer tools -> Network.
-  - Finish: 2.34 s
-  - DOMContentLoaded: 1.76 s
+  - Finish: 2.72 s
+  - DOMContentLoaded: 2.01 s
 
 
 * The following steps were followed on all major browsers.
 
     - On page load:
+        - If new user('player') a enter name modal appears.
+        - If a returning user('player') no modal appears and game counter starts counting down.
+
+    - Change user button:
+        - Clicked on the change user button, enter name modal appeared as intended.
+        - Entered a new name which then appeared in on the main page. Entering a new name during a game results in a bug with the counter (see bugs section below).
 
     - Enter name modal:
         - Checked that the 'enter name' modal appeared on page load.
@@ -198,6 +200,7 @@ completing a level.
 
     - Reloading page.
         - Forced a page to reload. The counter appeared as intended and the current player name appeared. The page functioned as intended.
+        - Changed player name during a game results in multiple countdowns. Reloading the page removes the countdown from the previous player.
 
     - Main game:
         - Checked to see that name entered in the text field matches that which appears on the screen.
@@ -218,7 +221,7 @@ completing a level.
     - The following bugs occurred during development
 
     - Counter issue:
-      - The counter continued to run past zero even when the player completed the game. The countdown () function is updated to stop the clock when a player completes the game.
+      - The counter continued to run past zero even when the player completed the game. The countdown () function was updated to stop the clock when a player completes the game.
     - Randomize feature:
       - Adding the randomize feature caused buttons to randomize on click as opposed to on page load. This was corrected with changes made to the randomize function.
     - Rows too close to each other:
@@ -288,6 +291,9 @@ The website was developed using both *GitPod* and using *Git* pushed to *GitHub*
 
 
 ### Updates
+
+15/09/20
+  - Readme updated. 
 
 14/09/20
   - Text changed in enter name modal.
