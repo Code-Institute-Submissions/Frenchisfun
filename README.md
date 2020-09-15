@@ -180,8 +180,8 @@ completing a level.
 * The following steps were followed on all major browsers.
 
     - On page load:
-        - If new user('player') a enter name modal appears.
-        - If a returning user('player') no modal appears and game counter starts counting down.
+        - If new user('player') starts a game (name not in local storage) then a enter name modal appears.
+        - If user('player') returns (name is in local storage) no modal appears and game counter starts counting down.
 
     - Change user button:
         - Clicked on the change user button, enter name modal appeared as intended.
